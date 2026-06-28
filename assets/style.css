@@ -56,17 +56,32 @@ section{
     display: flex; 
     gap: 10px;
 }
-.date-input-container input{
+.input-container{
+    display: flex;
     border: 2px solid var(--dark-color);
-    width: 85%;
+    border-radius: 10px;
+    width: 82%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.input-container input{
+    border-radius: 10px;
+    border: 2px solid var(--light-color);
+    width: 30%;
     height: 100%;
     font-family: "Montserrat", 'sans serif';
     padding: 10px;
-    font-size: 1.8rem;
-    border-radius: 10px;
+    font-size: 1.5rem;
     font-weight: 500;
     color: var(--second-color);
     background-color: var(--light-color);
+    outline: none;
+    display: flex;
+}
+.input-container p{
+    font-size: 1.5rem;
+    opacity: .8;
 }
 .calendar-button{
     padding: 1px;
